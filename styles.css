@@ -1,0 +1,107 @@
+/* Reset dasar */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Arial', sans-serif;
+}
+
+body {
+   background-color: #eef2f7;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+}
+
+header {
+   background-color: #4A90E2;
+   color: white;
+   text-align: center;
+   padding: 15px;
+   width: 100%;
+   font-size: 1.8em;
+   font-weight: bold;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+   width: 100%;
+   max-width: 700px;
+   margin-top: 20px;
+}
+
+.form-section {
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+   margin-bottom: 20px;
+}
+
+input, button {
+   width: 100%;
+   padding: 12px;
+   margin-top: 10px;
+   border: 1px solid #ccc;
+   border-radius: 6px;
+   font-size: 1rem;
+}
+
+button {
+   background-color: #4A90E2;
+   color: white;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+   background-color: #357ABD;
+   transform: scale(1.05);
+}
+
+.checkbox-group {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+   width: 18px;
+   height: 18px;
+   cursor: pointer;
+}
+
+#incompleteBookList, #completeBookList {
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-testid="bookItem"] {
+   border: 1px solid #ddd;
+   padding: 15px;
+   margin-top: 10px;
+   border-radius: 8px;
+   background-color: #f9f9f9;
+   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+[data-testid="bookItem"]:hover {
+   transform: scale(1.02);
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+[data-testid="bookItem"] .button-group {
+   display: flex;
+   gap: 10px;
+}
+
+[data-testid="bookItem"] button {
+   margin-top: 5px;
+}
